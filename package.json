@@ -1,0 +1,20 @@
+{
+  "name": "notus-dx-challenge-architect",
+  "version": "1.0.0",
+  "description": "Implementação de arquitetura superior para o Desafio Notus DX. Foco em resiliência, testes de produção e um SDK enterprise-grade para demonstrar a excelência em engenharia Web3.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelMachado1/notus-dx-challenge-architect.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelMachado1/notus-dx-challenge-architect/issues"
+  },
+  "homepage": "https://github.com/RafaelMachado1/notus-dx-challenge-architect#readme"
+}
