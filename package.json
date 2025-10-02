@@ -16,5 +16,21 @@
   "bugs": {
     "url": "https://github.com/RafaelMachado1/notus-dx-challenge-architect/issues"
   },
-  "homepage": "https://github.com/RafaelMachado1/notus-dx-challenge-architect#readme"
+  "homepage": "https://github.com/RafaelMachado1/notus-dx-challenge-architect#readme",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "eslint": "^9.36.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.3",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.4"
+  }
 }
