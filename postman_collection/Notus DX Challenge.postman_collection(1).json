@@ -1,0 +1,5721 @@
+{
+	"info": {
+		"_postman_id": "0e182bf2-f973-4499-8aa0-56a35b2fcf19",
+		"name": "Notus DX Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24823244"
+	},
+	"item": [
+		{
+			"name": "01 - Blockchain",
+			"item": [
+				{
+					"name": "GET List Chains",
+					"item": [
+						{
+							"name": "✅ [200] Get List Chains",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{crypto_base_url}}/chains",
+									"host": [
+										"{{crypto_base_url}}"
+									],
+									"path": [
+										"chains"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET List Chains",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{crypto_base_url}}/chains",
+											"host": [
+												"{{crypto_base_url}}"
+											],
+											"path": [
+												"chains"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 21:43:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"459-3fU7rZlHcvuV8XUDkIxWzAin0RM\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "fd1eb9350cf322be17bc0fcc663d44fa"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "tnHLjhxtQwuGuaFpBT7zVQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=QKBaH2N1igFcGJq8qgJCHrvQ417NYTyS7EtErc42Wj71xQWUMm8f66ZKzBCp8nXklJ4OKe%2B5sYMhhF0o3cnkuTYwJTXtJiU907viBeph\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987f2241ade61e2d-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"chains\": [\n        {\n            \"id\": 0,\n            \"name\": \"Bitcoin\",\n            \"logo\": \"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"Ethereum\",\n            \"logo\": \"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Optimism\",\n            \"logo\": \"https://assets.coingecko.com/coins/images/25244/large/Optimism.png?1696524385\"\n        },\n        {\n            \"id\": 56,\n            \"name\": \"BNB\",\n            \"logo\": \"https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970\"\n        },\n        {\n            \"id\": 100,\n            \"name\": \"Gnosis Chain\",\n            \"logo\": \"https://coin-images.coingecko.com/asset_platforms/images/11062/large/Aatar_green_white.png?1706606458\"\n        },\n        {\n            \"id\": 137,\n            \"name\": \"Polygon\",\n            \"logo\": \"https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745\"\n        },\n        {\n            \"id\": 8453,\n            \"name\": \"BASE\",\n            \"logo\": \"https://assets.coingecko.com/asset_platforms/images/131/standard/base.jpeg?1706606719\"\n        },\n        {\n            \"id\": 42161,\n            \"name\": \"Arbitrum\",\n            \"logo\": \"https://assets.coingecko.com/asset_platforms/images/33/standard/AO_logomark.png?1706606717\"\n        },\n        {\n            \"id\": 43114,\n            \"name\": \"Avalanche\",\n            \"logo\": \"https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "❌ [403] Error - Invalid API Key",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "invalid-api-key",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{crypto_base_url}}/chains",
+									"host": [
+										"{{crypto_base_url}}"
+									],
+									"path": [
+										"chains"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [403] Error - Invalid API Key",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "invalid-api-key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{crypto_base_url}}/chains",
+											"host": [
+												"{{crypto_base_url}}"
+											],
+											"path": [
+												"chains"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 22:05:41 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "X_MP8nQISr23V_M5PvyhXg"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5MhgBFyutpXApSXWgWy29ixV7knWL0Xn5wJGPp2Q4cZKkRv9Dl83kp25Sqos0wMeZMNDIP%2BFBQrFeIaAKYrI%2Fl3LmEIZ7Z3SlmkeTNsi\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987f434fefc3e637-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Get List Tokens",
+					"item": [
+						{
+							"name": "✅ [200] Get List Tokens",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{crypto_base_url}}/tokens",
+									"host": [
+										"{{crypto_base_url}}"
+									],
+									"path": [
+										"tokens"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "GET List Tokens",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{crypto_base_url}}/tokens",
+											"host": [
+												"{{crypto_base_url}}"
+											],
+											"path": [
+												"tokens"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 22:07:09 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"31-knj4ee4McKmsC6U+XKaJAchTesw\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "58a3e5171206fda8601f9c55b447338c"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "QVqw0jezS2KXxuujBT7zVQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zwMgDXXb%2BC4yFaUjpRfOU8Hx8s0BVDR8VAk0HlB4p%2FxZdkstR3iAAEp4%2F6SpNNfSJjfK3rQF%2FcFykkxpdl7S04iXnATIjX02K3p03ciX\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987f45731d5b9c5e-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"tokens\": [],\n    \"total\": 0,\n    \"totalPerPage\": 0,\n    \"page\": 1\n}"
+								}
+							]
+						},
+						{
+							"name": "❌ [403] Error - Invalid API Key",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "invalid-api-key",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{crypto_base_url}}/tokens",
+									"host": [
+										"{{crypto_base_url}}"
+									],
+									"path": [
+										"tokens"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [403] Error - Invalid API Key",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "invalid-api-key",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{crypto_base_url}}/tokens",
+											"host": [
+												"{{crypto_base_url}}"
+											],
+											"path": [
+												"tokens"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 22:12:03 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "WhEpDEaYSSm_eSCxPvyhXg"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=3w47F5IP188lFeGx3kyfsf17i9evXcvdEP79DVFuAV07etowcKNYWUQiQZkNNo2b6MwXdlGx4Wrf8NHph7BERlSie0i2MJXzqJsk4%2BR3\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987f4ca41f9cf283-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "02 - Smart Wallets",
+			"item": [
+				{
+					"name": "Register Smart Wallet [POST]",
+					"item": [
+						{
+							"name": "❌ [403] Error - Project Not Found (Attempt)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNWVjYWZjYi0yMGYzLTQ1NGEtYWFiMS03MDZlYjFhM2MzMTQiLCJhcGlLZXlHZW5lcmF0ZWRBdCI6IjIwMjUtMDktMjZUMjE6NDg6MTMuMjAyWiIsIm9yZ2FuaXphdGlvbklkIjoiYTc1YzIxMjMtYzcxMi00M2JjLWIzMDMtZmE2YThjOWIxYjUyIn0.9hTx-whoOCgsoMWdXn_EjlvelUr8QRD1hVcnm6Rezho",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"invalid-address\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [403] Error - Project Not Found (Attempt)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNWVjYWZjYi0yMGYzLTQ1NGEtYWFiMS03MDZlYjFhM2MzMTQiLCJhcGlLZXlHZW5lcmF0ZWRBdCI6IjIwMjUtMDktMjZUMjE6NDg6MTMuMjAyWiIsIm9yZ2FuaXphdGlvbklkIjoiYTc1YzIxMjMtYzcxMi00M2JjLWIzMDMtZmE2YThjOWIxYjUyIn0.9hTx-whoOCgsoMWdXn_EjlvelUr8QRD1hVcnm6Rezho",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"externallyOwnedAccount\": \"invalid-address\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/register",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"register"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 20:58:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "uUoIepymRBy1bW9fwoOzXw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=pLjKW0QPqGbDxIlqUU6i%2BkNlXcIuxll2Br%2FcHIhzGhn1m06ut4alVMylo1hTEM1I4b5ZyqDwx0O6ScXmEa3w3O%2Fb2hVrTqtk09xrLSiN\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987ee0adbeef585a-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						},
+						{
+							"name": "❌ [403] Error - Invalid API Key",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "invalid-api-key",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"invalid-address\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [403] Error - Invalid API Key",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "invalid-api-key",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"externallyOwnedAccount\": \"invalid-address\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/register",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"register"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 21:02:35 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "h3M-BhjxRkyFH7d6BT7zVQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jgSMDD8EamKpSCEN%2Btf6F1kTHkHFhYs8tdL4sSYrxvuQLS95QWlx5SQZg0UwD1Za7C3Ql3CaeevrKFDblQhsr1g%2F4%2Fgz7bSCE%2B2pthTJ\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987ee6dcb8ea078c-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						},
+						{
+							"name": "❌ [400] Error - Malformed EOA",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"invalid-address\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [400] Error - Malformed EOA",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"externallyOwnedAccount\": \"invalid-address\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/register",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"register"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 21:06:06 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "156"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"9c-9eo9QJDRsFicQerRFzfHtfUL6sk\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "e123753666b4eb5f6b484bd96ff4b8c4"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "Ezy_mTSmRB-uZp4FCx5-qw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gjbP1yfP2BU8WeRIFcdyw9qFTrLfbfom6pXdJsrkIrLmkC5gf3O75Zco%2FgZaXLfxOLNJIDsY9ERZ1CGYD7C9%2BDF%2BcEbkpGq6HBMHgWdP\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987eec046ea69bd3-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"validation\": \"regex\",\n            \"code\": \"invalid_string\",\n            \"message\": \"Invalid\",\n            \"path\": [\n                \"externallyOwnedAccount\"\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "✅ [201] Register Wallet (Salt 3)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n  \"salt\": \"3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "✅ [201] Register Wallet (Salt 3)",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n  \"salt\": \"3\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/register",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 13:54:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1768"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"6e8-FemqulW8mpdpqe3k3smxONRq8G8\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "10b02ffc2ae4eed1b244bd108cfb3228"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "WmK_sqVAS2uH69chozsQ6Q"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=24X7n7bhZ74flUSuWhIMnusmJZqcBfVRC3bh3UJqOStAajE%2BIodR8C0e%2FPimER8tf6Q8lYY1a8nfctq6xuELX29Pj0%2FPubbJvZXT1M2i\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9884b0f26cee7cb2-EWR"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wallet\": {\n        \"accountAbstraction\": \"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0\",\n        \"walletAddress\": \"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0\",\n        \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n        \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n        \"implementation\": \"0x8e8e658e22b12ada97b402ff0b044d6a325013c7\",\n        \"eip7702\": false,\n        \"salt\": \"3\",\n        \"registeredAt\": \"2025-10-02T13:54:21.283Z\",\n        \"metadata\": null,\n        \"deployed\": [\n            {\n                \"chain\": {\n                    \"id\": 0,\n                    \"name\": \"Bitcoin\",\n                    \"logo\": \"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 1,\n                    \"name\": \"Ethereum\",\n                    \"logo\": \"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 10,\n                    \"name\": \"Optimism\",\n                    \"logo\": \"https://assets.coingecko.com/coins/images/25244/large/Optimism.png?1696524385\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 56,\n                    \"name\": \"BNB\",\n                    \"logo\": \"https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 100,\n                    \"name\": \"Gnosis Chain\",\n                    \"logo\": \"https://coin-images.coingecko.com/asset_platforms/images/11062/large/Aatar_green_white.png?1706606458\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 137,\n                    \"name\": \"Polygon\",\n                    \"logo\": \"https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 8453,\n                    \"name\": \"BASE\",\n                    \"logo\": \"https://assets.coingecko.com/asset_platforms/images/131/standard/base.jpeg?1706606719\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 42161,\n                    \"name\": \"Arbitrum\",\n                    \"logo\": \"https://assets.coingecko.com/asset_platforms/images/33/standard/AO_logomark.png?1706606717\"\n                },\n                \"deployed\": false\n            },\n            {\n                \"chain\": {\n                    \"id\": 43114,\n                    \"name\": \"Avalanche\",\n                    \"logo\": \"https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369\"\n                },\n                \"deployed\": false\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "❌ [400] Error - Wallet Already Registered",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [400] Error - Wallet Already Registered",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/register",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"register"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 21:12:44 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "191"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"bf-EldKaTycz5FKJxW9R4RmLm7S4Co\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "7e3143c55f7c7ec646d94acf0b484425"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "pkTIRSiLTvCS6xXLCx5-qw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=eBpMTkEIKTe%2BZ7WvxbQqq4P4HFNuL%2FFQ0LP5O%2BczvaLCa4yw6rg1NKwN5lu5ZVULv6C7iSvW9g58TYpNlACNS3m39ajrFky13aiH9XB%2B\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987ef5bb2ae7a471-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"This wallet \\\"0xfe64ab5d6577f2958a6563b104c5733417ee6c4c\\\" is already registered with this project.\",\n    \"id\": \"WALLET_ALREADY_REGISTERED\",\n    \"traceId\": \"c720db9df0814abd94fd1d9dca208b50\"\n}"
+								}
+							]
+						},
+						{
+							"name": "✅ [201] Register Wallet (Salt 1)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"0x0e64ab05d577f2958ad656b104c5733417ee6c4c\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n  \"salt\": \"1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "❌ [400] Error - Extreme Salt Value",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0df\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n  \"salt\": 99999999999999999999999999999999999999999999999999\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/register",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "❌ [400] Error - Extreme Salt Value",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0df\",\n  \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n  \"salt\": 99999999999999999999999999999999999999999999999999\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/register",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"register"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Wed, 01 Oct 2025 21:16:24 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "180"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"b4-hWypL0wCv0DSSymjSt6UmiwKgvI\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "f7a48a8b04bc0ac27c60091eac25bfa9"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "8J4Bw7x5RMyWeOQ_Cx5-qw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=9FzCt4z5PHJPPRubAfkiF6z8n9fZBy4JFTNKSdl8fgCr9KXcyt5ccvkEK86Gr3CjQfXDRZwEx2w8oQYAU0qv9QyszkmeAYvQkIs0GX9F\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "987efb1a6e3e9c7e-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"code\": \"invalid_type\",\n            \"expected\": \"string\",\n            \"received\": \"number\",\n            \"path\": [\n                \"salt\"\n            ],\n            \"message\": \"Expected string, received number\"\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Create Deposit Transaction [POST]",
+					"item": [
+						{
+							"name": "x [404] Error - Incorrect Method",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "INVALID-KEY",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n  \"fromAddress\": \"0xINVALID_ADDRESS\" \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"deposit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "x [404] Error - Incorrect Method",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "INVALID-KEY",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n  \"fromAddress\": \"0xINVALID_ADDRESS\" \n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"deposit"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 15:05:51 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"71-DPwCvDboAxyHCRX/LYp7zvYaIYA\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "22ytrZOzTu-nZ-IgPvyhXg"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=rCLsEZUYIzngkMgLMi4wiWCVBAKEthK9gmpynJD9AS38WmRoPvxNlKRL7k4vCyz1gbNl6TDzmjJnOMLW9jBh0eEEWQqODZZKV3fioIof\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "988519b09963c5ae-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Cannot GET /api/v1/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						},
+						{
+							"name": "x [403] Error - Invalid API Key",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "INVALID-KEY",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n  \"fromAddress\": \"0xINVALID_ADDRESS\" \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"deposit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "x [403] Error - Invalid API Key",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "INVALID-KEY",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n  \"fromAddress\": \"0xINVALID_ADDRESS\" \n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"deposit"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 15:01:38 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "XXX6LviJQda6kyb5woOzXw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=4sKToYGfqHXdGXKQVc0ikzH1LyiHeBaFHy7dKmM5lRTAUPJwVIRXp4KCtELgLUSlf69iaZF5ZadBB4Mt7Q7c4UuEub5IqBhJvwtVyBa5\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "98851385f95dc998-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						},
+						{
+							"name": "x [400] Error - Malformed fromAddress",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n  \"fromAddress\": \"0xINVALID_ADDRESS\" \n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"deposit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "x [400] Error - Malformed fromAddress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n  \"fromAddress\": \"0xINVALID_ADDRESS\" \n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"deposit"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 14:57:38 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "145"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"91-GSNJ7N4nKxljUcpsNm1KegJ9fWU\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "a655d549ad10fc59b2c2b773737b80d9"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "mRQJO3TlSDSXULdDg4a9AQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Hlh4m%2FLAoUtzFozMRAfX9TdwDDHixSxziy46yowly%2BUbBZMC59HEc01LJ1RkYzJz%2FdTxbhS0%2FPaWZb8dV9Oy92QqY2AbLeKBdfNx1IUJ\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "98850da50d99e5f0-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"validation\": \"regex\",\n            \"code\": \"invalid_string\",\n            \"message\": \"Invalid\",\n            \"path\": [\n                \"fromAddress\"\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "x [500] Error - Insufficient Balance",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\", \n  \"fromAddress\": \"0x0e64ab05d577f2958ad656b104c5733417ee6c4c\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"deposit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "x [500] Error - Insufficient Balance",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\", \n  \"fromAddress\": \"0x0e64ab05d577f2958ad656b104c5733417ee6c4c\"\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"deposit"
+											]
+										}
+									},
+									"status": "Internal Server Error",
+									"code": 500,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 15:10:10 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "165"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"a5-GEmt4xfr1Ao4lej9vqFcdJmdq1M\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "2c1f39f630b4f1c6293af46b14aa621a"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "0FD1JX_iSJ-2aSv1ozsQ6Q"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=K%2FK4b20AZNwq0%2B4pm%2FhEGV4NiDUXHNssrPoeaedT3Zu57%2B%2F4Ule%2Bh52TDVbqPN4YrB%2BHdSD4BdS9Z40lEB1F1r6l2Z6XEtDBKDG6hXzS\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "988520040adb824e-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Execution reverted with reason: ERC20: transfer amount exceeds balance.\",\n    \"id\": \"FAILED_TO_ESTIMATE_TRANSFER\",\n    \"traceId\": \"6bbc15e8897f4cb9860a171496003f20\"\n}"
+								}
+							]
+						},
+						{
+							"name": "[200] Create Deposit Transaction",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\", \n  \"fromAddress\": \"{{eoa_salt3}}\"\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"deposit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[200] Create Deposit Transaction",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"amount\": \"1.0\",\n  \"chainId\": 137,\n  \"token\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\", \n  \"fromAddress\": \"{{eoa_salt3}}\"\n  }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/deposit",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"deposit"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 14:29:24 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "317"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"13d-AxCzDq4Czpq+YikijGvGgtKBtIY\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "96699df7318ceca3983a4e7f029a2956"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "c9dzYGWmQPG0YbCdAax-fw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=BtCPraoEx162EtOp79xzVVtuKN7wcQCCRpwe5%2FWBAei4tJd02a14X9O6LvskH1sw6wi%2FXdYPZkdyRV28O%2BRR2%2FKbfM6QzIq1mg4hhChB\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9884e44aabe372a7-EWR"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"transfer\": {\n        \"from\": \"0x0b2c639c533813f4aa9d7837caf62653d097ff85\",\n        \"to\": \"0x2791bca1f2de4661ed88a30c99a7a9449aa84174\",\n        \"value\": \"0\",\n        \"data\": \"0xa9059cbb000000000000000000000000c4ffc6ad0d4acae4ff8dece550745d4adb5940a000000000000000000000000000000000000000000000000000000000000f4240\",\n        \"estimateGasCost\": \"0.005305152764177635\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Get Smart Wallet [GET]",
+					"item": [
+						{
+							"name": "[200] Success - Get Wallet",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0x133700000000000000000000000000000000c0de&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"address"
+									],
+									"query": [
+										{
+											"key": "externallyOwnedAccount",
+											"value": "0x133700000000000000000000000000000000c0de"
+										},
+										{
+											"key": "factory",
+											"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+										},
+										{
+											"key": "salt",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[200] Success - Get Wallet",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 15:56:38 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"1b85-jw+O1iRGvJIE1RxgY81Fo7RoXes\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "18b4be760d98ad9ee8259ffabeca7cb6"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "KWQUNqiLSp2W4qFLg4a9AQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=wZ1M%2BFIBb9L735WRU44XMUGZlzl9skDVGonnBB8xleHiMyDcYiCvnprwvvxZDJTTjSJNSLpCF9ugXUiPSLUR3CnXnitujIk7nxgjdd0n\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "988564128ab5de8e-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"wallets\": [\n        {\n            \"accountAbstraction\": \"0xba162f7628648e6b11b26941950c1aeead919eba\",\n            \"walletAddress\": \"0xba162f7628648e6b11b26941950c1aeead919eba\",\n            \"externallyOwnedAccount\": \"0x0e64ab05d577f2958ad656b104c5733417ee6c4c\",\n            \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n            \"implementation\": \"0x8e8e658e22b12ada97b402ff0b044d6a325013c7\",\n            \"eip7702\": false,\n            \"salt\": \"1\",\n            \"registeredAt\": \"2025-10-01T20:33:16.275Z\",\n            \"metadata\": null,\n            \"deployed\": [\n                {\n                    \"chain\": {\n                        \"id\": 0,\n                        \"name\": \"Bitcoin\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 1,\n                        \"name\": \"Ethereum\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 10,\n                        \"name\": \"Optimism\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/25244/large/Optimism.png?1696524385\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 56,\n                        \"name\": \"BNB\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 100,\n                        \"name\": \"Gnosis Chain\",\n                        \"logo\": \"https://coin-images.coingecko.com/asset_platforms/images/11062/large/Aatar_green_white.png?1706606458\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 137,\n                        \"name\": \"Polygon\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 8453,\n                        \"name\": \"BASE\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/131/standard/base.jpeg?1706606719\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 42161,\n                        \"name\": \"Arbitrum\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/33/standard/AO_logomark.png?1706606717\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 43114,\n                        \"name\": \"Avalanche\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369\"\n                    },\n                    \"deployed\": false\n                }\n            ]\n        },\n        {\n            \"accountAbstraction\": \"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0\",\n            \"walletAddress\": \"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0\",\n            \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n            \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n            \"implementation\": \"0x8e8e658e22b12ada97b402ff0b044d6a325013c7\",\n            \"eip7702\": false,\n            \"salt\": \"3\",\n            \"registeredAt\": \"2025-10-02T13:54:21.283Z\",\n            \"metadata\": null,\n            \"deployed\": [\n                {\n                    \"chain\": {\n                        \"id\": 0,\n                        \"name\": \"Bitcoin\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 1,\n                        \"name\": \"Ethereum\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 10,\n                        \"name\": \"Optimism\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/25244/large/Optimism.png?1696524385\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 56,\n                        \"name\": \"BNB\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 100,\n                        \"name\": \"Gnosis Chain\",\n                        \"logo\": \"https://coin-images.coingecko.com/asset_platforms/images/11062/large/Aatar_green_white.png?1706606458\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 137,\n                        \"name\": \"Polygon\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 8453,\n                        \"name\": \"BASE\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/131/standard/base.jpeg?1706606719\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 42161,\n                        \"name\": \"Arbitrum\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/33/standard/AO_logomark.png?1706606717\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 43114,\n                        \"name\": \"Avalanche\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369\"\n                    },\n                    \"deployed\": false\n                }\n            ]\n        },\n        {\n            \"accountAbstraction\": \"0xc7ad4c2a92dceff41fc2581bcdaa81f38913fd4d\",\n            \"walletAddress\": \"0xc7ad4c2a92dceff41fc2581bcdaa81f38913fd4d\",\n            \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n            \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n            \"implementation\": \"0x8e8e658e22b12ada97b402ff0b044d6a325013c7\",\n            \"eip7702\": false,\n            \"salt\": \"2\",\n            \"registeredAt\": \"2025-10-01T21:18:19.596Z\",\n            \"metadata\": null,\n            \"deployed\": [\n                {\n                    \"chain\": {\n                        \"id\": 0,\n                        \"name\": \"Bitcoin\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 1,\n                        \"name\": \"Ethereum\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 10,\n                        \"name\": \"Optimism\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/25244/large/Optimism.png?1696524385\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 56,\n                        \"name\": \"BNB\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 100,\n                        \"name\": \"Gnosis Chain\",\n                        \"logo\": \"https://coin-images.coingecko.com/asset_platforms/images/11062/large/Aatar_green_white.png?1706606458\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 137,\n                        \"name\": \"Polygon\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 8453,\n                        \"name\": \"BASE\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/131/standard/base.jpeg?1706606719\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 42161,\n                        \"name\": \"Arbitrum\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/33/standard/AO_logomark.png?1706606717\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 43114,\n                        \"name\": \"Avalanche\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369\"\n                    },\n                    \"deployed\": false\n                }\n            ]\n        },\n        {\n            \"accountAbstraction\": \"0xfe64ab5d6577f2958a6563b104c5733417ee6c4c\",\n            \"walletAddress\": \"0xfe64ab5d6577f2958a6563b104c5733417ee6c4c\",\n            \"externallyOwnedAccount\": \"0x133700000000000000000000000000000000c0de\",\n            \"factory\": \"0x0000000000400cdfef5e2714e63d8040b700bc24\",\n            \"implementation\": \"0x8e8e658e22b12ada97b402ff0b044d6a325013c7\",\n            \"eip7702\": false,\n            \"salt\": \"0\",\n            \"registeredAt\": \"2025-10-01T18:10:26.748Z\",\n            \"metadata\": null,\n            \"deployed\": [\n                {\n                    \"chain\": {\n                        \"id\": 0,\n                        \"name\": \"Bitcoin\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 1,\n                        \"name\": \"Ethereum\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 10,\n                        \"name\": \"Optimism\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/25244/large/Optimism.png?1696524385\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 56,\n                        \"name\": \"BNB\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 100,\n                        \"name\": \"Gnosis Chain\",\n                        \"logo\": \"https://coin-images.coingecko.com/asset_platforms/images/11062/large/Aatar_green_white.png?1706606458\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 137,\n                        \"name\": \"Polygon\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/4713/standard/polygon.png?1698233745\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 8453,\n                        \"name\": \"BASE\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/131/standard/base.jpeg?1706606719\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 42161,\n                        \"name\": \"Arbitrum\",\n                        \"logo\": \"https://assets.coingecko.com/asset_platforms/images/33/standard/AO_logomark.png?1706606717\"\n                    },\n                    \"deployed\": false\n                },\n                {\n                    \"chain\": {\n                        \"id\": 43114,\n                        \"name\": \"Avalanche\",\n                        \"logo\": \"https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369\"\n                    },\n                    \"deployed\": false\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[404] Error - Incorrect Method",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0x133700000000000000000000000000000000c0de&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"address"
+									],
+									"query": [
+										{
+											"key": "externallyOwnedAccount",
+											"value": "0x133700000000000000000000000000000000c0de"
+										},
+										{
+											"key": "factory",
+											"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+										},
+										{
+											"key": "salt",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[200] Success - Get Wallet Copy",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0x133700000000000000000000000000000000c0de&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"address"
+											],
+											"query": [
+												{
+													"key": "externallyOwnedAccount",
+													"value": "0x133700000000000000000000000000000000c0de"
+												},
+												{
+													"key": "factory",
+													"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+												},
+												{
+													"key": "salt",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 16:52:20 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"c3-XtuDWZ+wCgZSuaN4EYP5c6NSHSg\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "_42Y-chxTA2YEsioCx5-qw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MLlzcUqwg%2FUr756ew2de2RTJAQzLUerL5eRAyDpgGoQjJswneoHfCUSX%2FT7i%2FD2XqjQt8JSh33RjXAhmYqtVECZUX5Yi6cJqBfSl07st\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885b5ab689c0834-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Cannot POST /api/v1/wallets/address?externallyOwnedAccount=0x133700000000000000000000000000000000c0de&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						},
+						{
+							"name": "[403] Error - Invalid API Key",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0x133700000000000000000000000000000000c0de&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"address"
+									],
+									"query": [
+										{
+											"key": "externallyOwnedAccount",
+											"value": "0x133700000000000000000000000000000000c0de"
+										},
+										{
+											"key": "factory",
+											"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+										},
+										{
+											"key": "salt",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[403] Error - Invalid API Key",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0x133700000000000000000000000000000000c0de&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"address"
+											],
+											"query": [
+												{
+													"key": "externallyOwnedAccount",
+													"value": "0x133700000000000000000000000000000000c0de"
+												},
+												{
+													"key": "factory",
+													"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+												},
+												{
+													"key": "salt",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 16:47:13 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "gLDjZ4lPRgCTCE1NezItjw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mR4KXgI8U6nflaMrrE5EGVobE5w6sFK%2FApPhWhtc87hr1sf%2BiYVcOHRiHU5UQl30uMUQEPQtPwqMwl57LvK0gncl3iq%2BER%2FhDF1rvz3u\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885ae2efa5bcd1b-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						},
+						{
+							"name": "[400] Error - Malformed EOA",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0xINVALID_ADDRESS&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"address"
+									],
+									"query": [
+										{
+											"key": "externallyOwnedAccount",
+											"value": "0xINVALID_ADDRESS"
+										},
+										{
+											"key": "factory",
+											"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+										},
+										{
+											"key": "salt",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[400] Error - Malformed EOA",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/address?externallyOwnedAccount=0xINVALID_ADDRESS&factory=0x0000000000400CdFef5E2714E63d8040b700BC24&salt=3",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"address"
+											],
+											"query": [
+												{
+													"key": "externallyOwnedAccount",
+													"value": "0xINVALID_ADDRESS"
+												},
+												{
+													"key": "factory",
+													"value": "0x0000000000400CdFef5E2714E63d8040b700BC24"
+												},
+												{
+													"key": "salt",
+													"value": "3"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 16:43:36 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "156"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"9c-9eo9QJDRsFicQerRFzfHtfUL6sk\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "609a17c4d0e67b10c77d64eed0effd8e"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "wazOjlGWTxqRuJtpBT7zVQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=FOkP0AY7i3J2kdlIErlSeHtfV%2BitvUxL9oniXrL%2BeGtwmWdFcQGRCH8NCRmhMJ2TxGRKrwlSSP%2Fl4JrG6vVH%2FFTpB49rpiHZez%2B6TIDP\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885a8e1b81f1763-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"validation\": \"regex\",\n            \"code\": \"invalid_string\",\n            \"message\": \"Invalid\",\n            \"path\": [\n                \"externallyOwnedAccount\"\n            ]\n        }\n    ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Get Smart Wallet Portfolio [GET]",
+					"item": [
+						{
+							"name": "[200] Success - Get Portfolio",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/portfolio",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"portfolio"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[200] Success - Get Portfolio",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/portfolio",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"portfolio"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:02:55 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"26-mXsCuNkpRQKK6/heomY/X8x9iGs\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "0a535842c68c74d10216c99d2ae169dc"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "ngnzjDHIRWO3SnC8g4a9AQ"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=kCF5%2FXsXp2%2Fl0WfZZbBUxWChVbzomZ7NlWqxlpyGMuK9XEcE%2BTedlMSxz30abKhA8bNLO1ow0%2Bd2PzxoWtDxS17TEamd%2FGdXKgI7GlFL\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885c52b3effc985-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"tokens\": [],\n    \"nfts\": [],\n    \"portfolio\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "[500] Attempt - Non-Existent Wallet",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0x0000000000000000000000000000000000000000/portfolio",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0x0000000000000000000000000000000000000000",
+										"portfolio"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "[403] Error - Invalid API Key",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/portfolio",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"portfolio"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[403] Error - Invalid API Key",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/portfolio",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"portfolio"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:11:39 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"34-3p56LSEB62wKd8ArDbQu4NOSNh0\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "ybG3pUlrSAufnRuMezItjw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TzW%2FkRf1SkGJOCgnvdkRR2qh%2FHUOId5BOhcNgNzbZ22PMw1WOdz%2FskY%2BtjBn5XCJaWzdlx0%2FkI30snmB%2BdyBOOF1kDNYFuEzadcTAcwg\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885d1fab8d88847-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid Api key.\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Get Smart Wallet History",
+					"item": [
+						{
+							"name": "[200] Success - Get History (No Filters)",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/history",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"history"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[200] Success - Get History (No Filters)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/history",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"history"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:24:39 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"25-PuxPa9AB2KlMdnMOHmdOF16vjbc\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "becfcfb744571ae9dc9ae84c3da50b4a"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "Ye_uNdMpQlaBz-V1PvyhXg"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2BgoGiPZkFygAupl9Z%2BI0LoKfVyJynSkJ2dEg02iENydfrczzYgq%2Bu5koEo7KMzUzcyW3BOal2LJbC1yt910XCei9wamauSF0rCvDhUG%2B\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885e5005adfd62d-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"nextLastId\": null,\n    \"transactions\": []\n}"
+								}
+							]
+						},
+						{
+							"name": "[400] Error - Invalid Filter",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/history?status=INVALID_STATUS",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+										"history"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "INVALID_STATUS"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[400] Error - Invalid Filter",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0/history?status=INVALID_STATUS",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0xc4ffc6ad0d4acae4ff8dece550745d4adb5940a0",
+												"history"
+											],
+											"query": [
+												{
+													"key": "status",
+													"value": "INVALID_STATUS"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:32:09 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "357"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"165-1nuK+pyLSXR2rvXzKDWXEDYDuEw\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "ef15956f7daa6d10bced785c3c1cedfa"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "gQlKiUnWT0uq8mZVozsQ6Q"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=jf5ZlHddqkb0G2fSrOfgKennidmYCDqDQEacoKMt8NmUz7XVBT7ot6UHEeksZgwVqEoDqvFGn%2FSRicyVJW5jHDuJzsw1sbQI2Gw5Lw%3D%3D\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885efff9b77d69b-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"received\": \"INVALID_STATUS\",\n            \"code\": \"invalid_enum_value\",\n            \"options\": [\n                \"PROCESSING\",\n                \"ON_BRIDGE\",\n                \"COMPLETED\",\n                \"FAILED\",\n                \"PARTIALLY_COMPLETED\"\n            ],\n            \"path\": [\n                \"status\",\n                0\n            ],\n            \"message\": \"Invalid enum value. Expected 'PROCESSING' | 'ON_BRIDGE' | 'COMPLETED' | 'FAILED' | 'PARTIALLY_COMPLETED', received 'INVALID_STATUS'\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[404] Error - Wallet Not Found",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/0x0000000000000000000000000000000000000000/history",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"0x0000000000000000000000000000000000000000",
+										"history"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[404] Error - Wallet Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/0x0000000000000000000000000000000000000000/history",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"0x0000000000000000000000000000000000000000",
+												"history"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:28:25 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"e0-P0yPIM1oKG/F79m5ZYF4Ppl+f1s\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "05a62291b72395c7e10f78a70cf948b5"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "dxaP-9q3QAWI6Y9QPvyhXg"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=h4C6%2BsO00iF8GgVkgI3bTrFpxv%2B%2BNbUcTvGq6Ipk3H26UABGr9czWBaeIEZdibUDRYqvrBIBp5KedKUiA5Xw%2Bgl%2BL7h4uLbFyaQnvA%3D%3D\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885ea87bce8d692-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The requested wallet \\\"0x0000000000000000000000000000000000000000\\\" is not registered with the project\",\n    \"id\": \"ACCOUNT_ABSTRACTION_ADDRESS_NOT_REGISTERED_WITH_PROJECT\",\n    \"traceId\": \"2f33a15725c14157ac5dc2242d5a58ca\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Update Transaction Metadata [PATCH]",
+					"item": [
+						{
+							"name": "[404] Error - Transaction Not Found",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"metadata\": \"{\\\"orderId\\\": \\\"test-order-123\\\"}\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{wallets_base_url}}/wallets/transactions/FAKE-TRANSACTION-ID-12345/metadata",
+									"host": [
+										"{{wallets_base_url}}"
+									],
+									"path": [
+										"wallets",
+										"transactions",
+										"FAKE-TRANSACTION-ID-12345",
+										"metadata"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "[404] Error - Transaction Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"metadata\": {\n        \"orderId\": \"test-order-123\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/transactions/FAKE-TRANSACTION-ID-12345/metadata",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"transactions",
+												"FAKE-TRANSACTION-ID-12345",
+												"metadata"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:39:21 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"6e-t+gY2PLTsf1J3fDiGHFy5mlJhOE\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "-UMhrihfQqqD0bkiezItjw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=EFzl%2F1T8WT1IlNzNG9n8Mxszs8UIsxkJEVzfMvWdussG1jsXKgI72h2sdlUj%2BzdlcbOWCVOGy39oPWgkkA%2F7kcDLNHYu74qxcDz7dZyk\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9885fa7ecc5fd6a5-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Cannot GET /api/v1/wallets/transactions/FAKE-TRANSACTION-ID-12345/metadata\",\n    \"id\": \"HTTP_EXCEPTION\"\n}"
+								},
+								{
+									"name": "[404] Error - Transaction Not Found",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"metadata\": \"{\\\"orderId\\\": \\\"test-order-123\\\"}\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/transactions/FAKE-TRANSACTION-ID-12345/metadata",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"transactions",
+												"FAKE-TRANSACTION-ID-12345",
+												"metadata"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 17:48:52 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"8e-3j08UFaUxC+Q2odJ0R7v23Eu/Lw\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "d44be37c0469db8dfe64665cc7f1fc7b"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "yF09SclOTPKjSl6VozsQ6Q"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5MCptz4oZ52B8H0fOFynG4daXSEjxhZSCnXLrmvtOhWCFqkhI3Pjw%2FhpwqPtjBCmU6WwwkVAdh972611HnR2CU%2BzwmL94Me8Pxu3NKBj\"}]}"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "988608799a01056b-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Could not find the transaction by the given parameters\",\n    \"id\": \"TRANSACTION_NOT_FOUND\",\n    \"traceId\": \"c8d926607769438a826e53b256d355b0\"\n}"
+								},
+								{
+									"name": "[400] Error - Transaction Not Found",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{api_key}}",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"metadata\": {\n        \"orderId\": \"test-order-123\"\n    }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{wallets_base_url}}/wallets/transactions/FAKE-TRANSACTION-ID-12345/metadata",
+											"host": [
+												"{{wallets_base_url}}"
+											],
+											"path": [
+												"wallets",
+												"transactions",
+												"FAKE-TRANSACTION-ID-12345",
+												"metadata"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Thu, 02 Oct 2025 18:11:14 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "184"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "content-security-policy",
+											"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+										},
+										{
+											"key": "cross-origin-opener-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "cross-origin-resource-policy",
+											"value": "same-origin"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"b8-MJC0z2nWCoqZvSuOiRRU5oybEZQ\""
+										},
+										{
+											"key": "origin-agent-cluster",
+											"value": "?1"
+										},
+										{
+											"key": "referrer-policy",
+											"value": "no-referrer"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "strict-transport-security",
+											"value": "max-age=31536000; includeSubDomains"
+										},
+										{
+											"key": "trace-id",
+											"value": "97135d1ed91e95aa3cb212e599ec7ef8"
+										},
+										{
+											"key": "x-content-type-options",
+											"value": "nosniff"
+										},
+										{
+											"key": "x-dns-prefetch-control",
+											"value": "off"
+										},
+										{
+											"key": "x-download-options",
+											"value": "noopen"
+										},
+										{
+											"key": "x-frame-options",
+											"value": "SAMEORIGIN"
+										},
+										{
+											"key": "x-permitted-cross-domain-policies",
+											"value": "none"
+										},
+										{
+											"key": "x-railway-edge",
+											"value": "railway/us-east4-eqdc4a"
+										},
+										{
+											"key": "x-railway-request-id",
+											"value": "vGKlepKmT_6O0DUOAax-fw"
+										},
+										{
+											"key": "x-xss-protection",
+											"value": "0"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Nel",
+											"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+										},
+										{
+											"key": "Report-To",
+											"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=iV3F%2Bx52SObl%2F8TfAeiLggUIuXBvC0v%2FGpL29VMVaR0s1o9QdEKxLrrjl0OLz8bmR1gcSyoWbHYgwCPXi2tsWv%2FHK5wMcNGDfxRGMEwJ\"}]}"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "988629401f43c58d-IAD"
+										},
+										{
+											"key": "alt-svc",
+											"value": "h3=\":443\"; ma=86400"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"code\": \"invalid_type\",\n            \"expected\": \"string\",\n            \"received\": \"object\",\n            \"path\": [\n                \"metadata\"\n            ],\n            \"message\": \"Expected string, received object\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "[POST] Transfer Saldo - salt3 para salt1",
+							"request": {
+								"method": "POST",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "03 - Fiat",
+			"item": [
+				{
+					"name": "POST Create Fiat Deposit Quote",
+					"item": [
+						{
+							"name": "✅ [201] Create Deposit Quote",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"paymentMethodToSend\": \"PIX\",\n    \"amountToSendInFiatCurrency\": 100,\n    \"receiveCryptoCurrency\": \"USDC\",\n    \"individualId\": \"d8f8f8f8-f8f8-f8f8-f8f8-f8f8f8f8f8f8\",\n    \"chainId\": 137,\n    \"walletAddress\": \"0xfe64ab5d6577f2958a6563b104c5733417ee6c4c\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{fiat_base_url}}/deposit/quote",
+									"host": [
+										"{{fiat_base_url}}"
+									],
+									"path": [
+										"deposit",
+										"quote"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "04 - KYC",
+			"item": [
+				{
+					"name": "✅ [200] Create KYC Session (Success)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"birthDate\": \"1990-01-15\",\n    \"documentCategory\": \"IDENTITY_CARD\",\n    \"documentCountry\": \"BRAZIL\",\n    \"documentId\": \"123456789\",\n    \"livenessRequired\": true,\n    \"email\": \"john.doe@example.com\",\n    \"address\": \"123 Main Street\",\n    \"city\": \"Anytown\",\n    \"state\": \"Anystate\",\n    \"postalCode\": \"12345-678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{kyc_base_url}}/individual-verification-sessions/standard?=",
+							"host": [
+								"{{kyc_base_url}}"
+							],
+							"path": [
+								"individual-verification-sessions",
+								"standard"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "✅ [200] Create KYC Session (Success)",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"John\",\n    \"lastName\": \"Doe\",\n    \"birthDate\": \"1990-01-15\",\n    \"documentCategory\": \"IDENTITY_CARD\",\n    \"documentCountry\": \"BRAZIL\",\n    \"documentId\": \"123456789\",\n    \"livenessRequired\": true,\n    \"email\": \"john.doe@example.com\",\n    \"address\": \"123 Main Street\",\n    \"city\": \"Anytown\",\n    \"state\": \"Anystate\",\n    \"postalCode\": \"12345-678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{kyc_base_url}}/individual-verification-sessions/standard?=",
+									"host": [
+										"{{kyc_base_url}}"
+									],
+									"path": [
+										"individual-verification-sessions",
+										"standard"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Oct 2025 23:35:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"8c7-RI681kbVKVX6NTXaqHFqG4G5CF0\""
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "trace-id",
+									"value": "80667bdf35399e7ba23d742ed6e63c83"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "x-railway-edge",
+									"value": "railway/us-east4-eqdc4a"
+								},
+								{
+									"key": "x-railway-request-id",
+									"value": "lBYlKYgCSdGjzp6FozsQ6Q"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=m9Yuk3L2kNLrERyyBn3uguOKvW8jEjEsM7cNYVKvQzpqtFzsuF9JEyDZnJ6sdqmZo9jyTeEHjl9seOwzy2FtYb61bzjuJAvvblcl2yoC\"}]}"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "987fc75948d8d64d-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"session\": {\n        \"id\": \"99802067-c35d-48ff-88ff-0df338a859de\",\n        \"individualId\": null,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"birthDate\": \"1990-01-15\",\n        \"document\": {\n            \"id\": \"123456789\",\n            \"type\": null,\n            \"category\": \"IDENTITY_CARD\"\n        },\n        \"status\": \"PENDING\",\n        \"livenessRequired\": true,\n        \"createdAt\": \"2025-10-01T23:35:50.122Z\",\n        \"updatedAt\": null\n    },\n    \"backDocumentUpload\": {\n        \"url\": \"https://s3.us-east-1.amazonaws.com/notus-api-kyc-9c95327\",\n        \"fields\": {\n            \"bucket\": \"notus-api-kyc-9c95327\",\n            \"X-Amz-Algorithm\": \"AWS4-HMAC-SHA256\",\n            \"X-Amz-Credential\": \"AKIA2AWK2XB6LPBVUHFR/20251001/us-east-1/s3/aws4_request\",\n            \"X-Amz-Date\": \"20251001T233550Z\",\n            \"key\": \"documents/0199a221-d462-788a-810f-95f15251780a\",\n            \"Policy\": \"eyJleHBpcmF0aW9uIjoiMjAyNS0xMC0wMVQyMzo0NTo1MFoiLCJjb25kaXRpb25zIjpbWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsMCwyNjIxNDQwMF0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJkb2N1bWVudHMvMDE5OWEyMjEtZDQ2Mi03ODhhLTgxMGYtOTVmMTUyNTE3ODBhIl0seyJidWNrZXQiOiJub3R1cy1hcGkta3ljLTljOTUzMjcifSx7IlgtQW16LUFsZ29yaXRobSI6IkFXUzQtSE1BQy1TSEEyNTYifSx7IlgtQW16LUNyZWRlbnRpYWwiOiJBS0lBMkFXSzJYQjZMUEJWVUhGUi8yMDI1MTAwMS91cy1lYXN0LTEvczMvYXdzNF9yZXF1ZXN0In0seyJYLUFtei1EYXRlIjoiMjAyNTEwMDFUMjMzNTUwWiJ9LHsia2V5IjoiZG9jdW1lbnRzLzAxOTlhMjIxLWQ0NjItNzg4YS04MTBmLTk1ZjE1MjUxNzgwYSJ9XX0=\",\n            \"X-Amz-Signature\": \"d98c73990daab64647ea415e0af2655ae28823fb72ddc5019b6dc12cfbe25bac\"\n        }\n    },\n    \"frontDocumentUpload\": {\n        \"url\": \"https://s3.us-east-1.amazonaws.com/notus-api-kyc-9c95327\",\n        \"fields\": {\n            \"bucket\": \"notus-api-kyc-9c95327\",\n            \"X-Amz-Algorithm\": \"AWS4-HMAC-SHA256\",\n            \"X-Amz-Credential\": \"AKIA2AWK2XB6LPBVUHFR/20251001/us-east-1/s3/aws4_request\",\n            \"X-Amz-Date\": \"20251001T233550Z\",\n            \"key\": \"documents/0199a221-d462-788a-810f-8b21cc022645\",\n            \"Policy\": \"eyJleHBpcmF0aW9uIjoiMjAyNS0xMC0wMVQyMzo0NTo1MFoiLCJjb25kaXRpb25zIjpbWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsMCwyNjIxNDQwMF0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJkb2N1bWVudHMvMDE5OWEyMjEtZDQ2Mi03ODhhLTgxMGYtOGIyMWNjMDIyNjQ1Il0seyJidWNrZXQiOiJub3R1cy1hcGkta3ljLTljOTUzMjcifSx7IlgtQW16LUFsZ29yaXRobSI6IkFXUzQtSE1BQy1TSEEyNTYifSx7IlgtQW16LUNyZWRlbnRpYWwiOiJBS0lBMkFXSzJYQjZMUEJWVUhGUi8yMDI1MTAwMS91cy1lYXN0LTEvczMvYXdzNF9yZXF1ZXN0In0seyJYLUFtei1EYXRlIjoiMjAyNTEwMDFUMjMzNTUwWiJ9LHsia2V5IjoiZG9jdW1lbnRzLzAxOTlhMjIxLWQ0NjItNzg4YS04MTBmLThiMjFjYzAyMjY0NSJ9XX0=\",\n            \"X-Amz-Signature\": \"3f07b8a32857ef63fa0785c62e9e90ef9cf3a59cce1f198fc6ab38bda1323edb\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "❌ [400] Create KYC Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"lastName\": \"Doe\",\n    \"birthDate\": \"1990-01-15\",\n    \"documentCategory\": \"IDENTITY_CARD\",\n    \"documentCountry\": \"BRAZIL\",\n    \"documentId\": \"123456789\",\n    \"livenessRequired\": true,\n    \"email\": \"john.doe@example.com\",\n    \"address\": \"123 Main Street\",\n    \"city\": \"Anytown\",\n    \"state\": \"Anystate\",\n    \"postalCode\": \"12345-678\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{kyc_base_url}}/individual-verification-sessions/standard?=",
+							"host": [
+								"{{kyc_base_url}}"
+							],
+							"path": [
+								"individual-verification-sessions",
+								"standard"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "❌ [400] Create KYC Session",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"lastName\": \"Doe\",\n    \"birthDate\": \"1990-01-15\",\n    \"documentCategory\": \"IDENTITY_CARD\",\n    \"documentCountry\": \"BRAZIL\",\n    \"documentId\": \"123456789\",\n    \"livenessRequired\": true,\n    \"email\": \"john.doe@example.com\",\n    \"address\": \"123 Main Street\",\n    \"city\": \"Anytown\",\n    \"state\": \"Anystate\",\n    \"postalCode\": \"12345-678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{kyc_base_url}}/individual-verification-sessions/standard?=",
+									"host": [
+										"{{kyc_base_url}}"
+									],
+									"path": [
+										"individual-verification-sessions",
+										"standard"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Oct 2025 23:46:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "164"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"a4-fn2JIoMyQ+otU95OLBkMzRrj0yE\""
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "trace-id",
+									"value": "8d29c28e771483d46d979d2f4a2644a1"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "x-railway-edge",
+									"value": "railway/us-east4-eqdc4a"
+								},
+								{
+									"key": "x-railway-request-id",
+									"value": "rVc0GES7Q3i-AtADwoOzXw"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RYMc%2FxZ0y2ZiFUAqU6elvAJnlaS%2BwwrCkCtbzgwfvNAJUhQREYt%2BMAKCKGlbpx3DW9o4HaLbXzKSufgjZFZ4O%2Be1bxnzTT%2BuWMrwvFLs\"}]}"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "987fd67b1f560840-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Bad Request\",\n    \"id\": \"BAD_REQUEST\",\n    \"errors\": [\n        {\n            \"code\": \"invalid_type\",\n            \"expected\": \"string\",\n            \"received\": \"undefined\",\n            \"path\": [\n                \"firstName\"\n            ],\n            \"message\": \"Required\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "✅ [200] Get KYC Session Result",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{kyc_base_url}}/individual-verification-sessions/standard/99802067-c35d-48ff-88ff-0df338a859de",
+							"host": [
+								"{{kyc_base_url}}"
+							],
+							"path": [
+								"individual-verification-sessions",
+								"standard",
+								"99802067-c35d-48ff-88ff-0df338a859de"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "✅ [200] Get KYC Session Result",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{kyc_base_url}}/individual-verification-sessions/standard/99802067-c35d-48ff-88ff-0df338a859de",
+									"host": [
+										"{{kyc_base_url}}"
+									],
+									"path": [
+										"individual-verification-sessions",
+										"standard",
+										"99802067-c35d-48ff-88ff-0df338a859de"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 Oct 2025 00:03:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"132-Uw6jGmYfLv4YGgDzprolKlQsApc\""
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "trace-id",
+									"value": "757de2f1644d0d1a29538070c0745d1a"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "x-railway-edge",
+									"value": "railway/us-east4-eqdc4a"
+								},
+								{
+									"key": "x-railway-request-id",
+									"value": "H4vJL99nSbC_gI8WCx5-qw"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2rSzAzg9OYxDs8WbdeNy6zu9qE2x7thzQPZr%2BCpfjDZDiAAu85QqBlBlfBjr60pA2mhza%2BnAb%2B4gidtf29%2B%2BGWIsFJsFFpwUcEbdva8I\"}]}"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "987fefb2f9838260-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"session\": {\n        \"id\": \"99802067-c35d-48ff-88ff-0df338a859de\",\n        \"individualId\": null,\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"birthDate\": \"1990-01-15\",\n        \"document\": {\n            \"id\": \"123456789\",\n            \"type\": null,\n            \"category\": \"IDENTITY_CARD\"\n        },\n        \"status\": \"EXPIRED\",\n        \"livenessRequired\": true,\n        \"createdAt\": \"2025-10-01T23:35:50.122Z\",\n        \"updatedAt\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "❌ [404] Get KYC Session (Not Found)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{api_key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{kyc_base_url}}/individual-verification-sessions/standard/99802067-c35d-48ff-88ff-0df338a859dA",
+							"host": [
+								"{{kyc_base_url}}"
+							],
+							"path": [
+								"individual-verification-sessions",
+								"standard",
+								"99802067-c35d-48ff-88ff-0df338a859dA"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "❌ [404] Get KYC Session (Not Found)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{api_key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{kyc_base_url}}/individual-verification-sessions/standard/99802067-c35d-48ff-88ff-0df338a859dA",
+									"host": [
+										"{{kyc_base_url}}"
+									],
+									"path": [
+										"individual-verification-sessions",
+										"standard",
+										"99802067-c35d-48ff-88ff-0df338a859dA"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 02 Oct 2025 00:12:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "content-security-policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "cross-origin-opener-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "cross-origin-resource-policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"8f-a391UahJkJcSxmbMzO1zpHo+OSE\""
+								},
+								{
+									"key": "origin-agent-cluster",
+									"value": "?1"
+								},
+								{
+									"key": "referrer-policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "trace-id",
+									"value": "6907a198f0eb7ae69bfc860408f8d4c7"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "x-dns-prefetch-control",
+									"value": "off"
+								},
+								{
+									"key": "x-download-options",
+									"value": "noopen"
+								},
+								{
+									"key": "x-frame-options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "x-permitted-cross-domain-policies",
+									"value": "none"
+								},
+								{
+									"key": "x-railway-edge",
+									"value": "railway/us-east4-eqdc4a"
+								},
+								{
+									"key": "x-railway-request-id",
+									"value": "CBXt9JrbREmHoHjWozsQ6Q"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "0"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Nel",
+									"value": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+								},
+								{
+									"key": "Report-To",
+									"value": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=mOgiuOo3l%2FynSjSZYgdA%2FUh1wCSoRJiy56%2F4f8iwcxvC%2BM3zmIKEoJ36X%2Fd4Jc8YU3IXBYVquohL%2Fr%2BfJBTFenUGFIq8v4xScW4aNB1T\"}]}"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "987ffda9be5139c0-IAD"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=86400"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Standard individual verification session not found\",\n    \"id\": \"STANDARD_SESSION_NOT_FOUND\",\n    \"traceId\": \"92066d36c74f4b3eac211c276252c647\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
